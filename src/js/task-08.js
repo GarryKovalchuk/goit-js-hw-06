@@ -16,7 +16,7 @@ loginForm.addEventListener("submit", (event) => {
       email: emailInput.value,
       password: passwordInput.value,
     };
-    console.log(formData);
-    loginForm.requestFullscreen();
+
+    loginForm.reset();
   }
 });
