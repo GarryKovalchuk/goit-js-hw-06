@@ -10,7 +10,7 @@ loginForm.addEventListener("submit", (event) => {
     emailInput.value === "" ||
     passwordInput.value === ""
   ) {
-    alert("All friends must be filled out");
+    alert("Прохання заповнити всі поля!");
   } else {
     const formData = {
       email: emailInput.value,
