@@ -5,7 +5,7 @@ loginForm.addEventListener("submit", (event) => {
 
   const emailInput = loginForm.elements.email;
   const passwordInput = loginForm.elements.password;
-
+  const { email, password } = event.currentTarget.elements;
   if (
     emailInput.value === "" ||
     passwordInput.value === ""
@@ -17,6 +17,7 @@ loginForm.addEventListener("submit", (event) => {
       password: passwordInput.value,
     };
 
+    console.log(formData);
     loginForm.reset();
   }
 });
